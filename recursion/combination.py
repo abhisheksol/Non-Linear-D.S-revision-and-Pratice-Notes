@@ -1,6 +1,5 @@
 def combination(index,target,data,ds):
-  if ds is None:
-    ds=[]
+
   if target==0:
     print(ds[:])
   if index<len(data):
@@ -17,10 +16,10 @@ def combination(index,target,data,ds):
                             #            \
                         #                ()
       ds.pop()
-      combination(index+1,target,data,ds)
+    combination(index+1,target,data,ds)
 
 
-arr = [2, 3, 6, 7]
+arr = [8,7,4,3]
 ds = []
-result = combination(0, 7, arr, ds)
+result = combination(0,11, arr, ds)
 print(result)
