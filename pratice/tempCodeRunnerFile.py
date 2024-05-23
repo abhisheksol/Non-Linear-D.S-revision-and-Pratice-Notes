@@ -1,2 +1,2 @@
 
-print(res)
+i.reverse()
